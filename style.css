@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E5D4C5;
+    color: #45474F;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+header{
+    padding: 1rem 0 0 0;
+    position: sticky;
+    top: 0;
+    background-color: #E5D4C5;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 14px;
+    /* border: 1px solid blue; */
+}
+nav>button{
+box-shadow: 30px 0 40px rgba(0,0,0,0.1),-30px 0 40px rgba(0,0,0,0.1);  
+}
+.nav-logo {
+    width: 75px; 
+    height: auto;  
+    /* border: 1px solid red; */
+    margin: 10px 0;
+    /* padding: 0!important; */
+  }
+h1{
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 24px;
+    color: black;
+    padding: 1rem 0;
+}
+h2 {
+    font-size: 20px;
+}
+button{
+    padding: 6px 18px;
+    border: none;
+    font-family: "Inter", sans-serif;    
+    font-weight: 600;
+    letter-spacing: .5px;
+    border-radius: 3px;
+}
+section{
+    padding: 24px 12px 0 12px;
+    max-width: 500px;
+    margin: 0 auto;
+    scroll-margin-top: 100px; 
+}
+  section:last-child {
+        margin-bottom: 100px;
+    }
+article{
+    background-color: #F8F4F0;
+    color: #45474F;
+    padding: 16px;
+    margin-top: 16px;
+    border-radius: 6px;
+    display: flex;
+    box-shadow: 30px 0 40px rgba(0,0,0,0.1),
+    -30px 0 40px rgba(0,0,0,0.1);  }
+  
+img{
+    width: 40%;
+    border-radius: 6px;
+    aspect-ratio: 1 / 1; /* Forces the image to always be a perfect square */
+    object-fit: cover; 
+}
+.cardText{
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+h3{ 
+    font-weight: 600;
+    color: #101828;
+    font-size: 1rem;
+    line-height: 24px;
+    padding: 6px 0;
+}
+p{
+    font-size: 12px; 
+    font-weight: 300;
+    line-height: 16px;
+    font-style: normal;
+}
+.cardBtns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+.price{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #181028;
+    display: block;
+    margin: 6px 0;
+    
+}
+.cardBtns>button{
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: rgb(241, 165, 11);
+    font-weight: 800;
+    color: #101828;
+}
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 18px 12px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+footer>span{
+    font-size: 1rem;
+    font-weight: 800;
+    color: #181028;
+    /* border: 1px solid red; */
+    flex-shrink: 0; 
+
+}
+footer>button{
+    background-color: green;
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 50px;
+    padding: 12px 14px;
+    flex-shrink: 0; 
+}

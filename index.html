@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<meta property="og:title" content="🔥 @mickies-The-kota-place - Online Prototype" />
+<meta property="og:description" content="Browse our full menu of gwinyas, Burgers, and Sides. Tap to build your order and send via WhatsApp!" />
+<meta property="og:image" content="@mickies-The-kota-place.netlify.app" />
+<meta property="og:type" content="website" />
+    <!-- External fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>@mickies-The-kota-place</title>
+</head>
+<body>
+    <header>
+         <img src="./images/logo.2.png" alt="Restaurant Logo" class="nav-logo">
+         <nav>
+            <button id="kotaBtn">Kotas</button>
+            <button id="burgerBtn">Burgers</button>
+            <button id="sidesBtn">Sides</button>
+         </nav>
+    </header>
+
+    <!-- End of header section -->
+    <main>
+        <!-- food items cards -->
+        <section id="kotas">
+            <h2>Kotas</h2>
+            <!-- kotas -->
+            <article>
+                <img src="./images/main-Character-kota.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>Main Character</h3>
+                <p>Kota loaf, extra slap chips, double Russian, grilled bacon, fried egg</p>
+                <span class="price"> R45-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="Special Kota" data-price="45">-</button>
+                    <span class="quantity" id="testQuantity">0</span>
+                    <button class="plus" data-name="Special Kota" data-price="45">+</button>
+                </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/the-Grootman-kota.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>Grootman</h3>
+                <p>Kota loaf, premium slap chips, double polony, Russian, fried egg, cheese.</p>
+                <span class="price"> R75-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="Full house overload" data-price="75">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="Full house overload" data-price="75">+</button>
+                </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/umlando-smash-kota.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>Monate Twaaa...</h3>
+                <p>Kota loaf, hot slap chips, double smashed beef patties, cheddar slice</p>
+                <span class="price"> R65-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="kota 3" data-price="65">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="kota 3" data-price="65">+</button>
+                </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/the-SoftLife-kota.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>SoftLife</h3>
+                <p>Kota loaf, crispy fries, viennas, grilled beef patty, melted cheddar.</p>
+                <span class="price"> R120-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="kota 4" data-price="120">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="kota 4" data-price="120">+</button>
+                </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/the-2k7-special-kota.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>2K7 Special</h3>
+                <p>Kota loaf, traditional salted slap chips, single polony, single vienna.</p>
+                <span class="price"> R120-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="kota 4" data-price="120">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="kota 4" data-price="120">+</button>
+                </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/certified-boy-girl-kota.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>Chicken DaNyc</h3>
+                <p>Kota loaf, peri-peri seasoned chips, crispy chicken breast strips</p>
+                <span class="price"> R120-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="kota 4" data-price="120">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="kota 4" data-price="120">+</button>
+                </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/yanos-vibe-kota.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>VrrrrPah</h3>
+                <p>Kota loaf, spicy chips, sliced boerewors, melted cheddar, fried egg</p>
+                <span class="price"> R120-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="kota 4" data-price="120">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="kota 4" data-price="120">+</button>
+                </div>
+                </div>
+            </article>
+        </section>
+        <!-- End of kota section -->
+        <section id="burgers">
+            <h2>Burgers</h2>
+            <article>
+                <img src="./images/amapiano-melt-burger.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>Amapiano Melt Burger</h3>
+                <p>Toasted brioche bun, juicy beef patty, sautéed brown mushrooms.</p>
+                <span class="price"> R80-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="king burger" data-price="80">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="king burger" data-price="80">+</button>
+                </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/bella-ciao-burger.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>Bela Ciao Burger</h3>
+                <p>Toasted brioche bun, 150g flame-grilled beef patty, melted cheddar.</p>
+                <span class="price"> R60-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="Chicken burger" data-price="60">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="Chicken burger" data-price="60">+</button>
+                </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/drip-burger.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>Drip Burger</h3>
+                <p>Toasted bun, flame-grilled beef patty, crispy bacon, fried egg.</p>
+                <span class="price"> R70-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="kasi beef burger" data-price="70">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="kasi beef burger" data-price="70">+</button>
+                </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/chillZone-burger.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>ChillZone Burger</h3>
+                <p>Toasted vegan bun, char-grilled plant-based patty, fresh avocado.</p>
+                <span class="price"> R40-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="kiddies burger" data-price="40">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="kiddies burger" data-price="40">+</button>
+                </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/haibo-T-burger.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>Haibo T Burger</h3>
+                <p>Toasted potato bun, two 100g crispy-edged smashed beef patties</p>
+                <span class="price"> R40-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="kiddies burger" data-price="40">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="kiddies burger" data-price="40">+</button>
+                </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/overkill-burger.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>Overkill Burger</h3>
+                <p> Toasted bun, 150g beef patty, tender pulled BBQ beef rib meat.</p>
+                <span class="price"> R40-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="kiddies burger" data-price="40">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="kiddies burger" data-price="40">+</button>
+                </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/pusha-T-burger.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>Phusha T Burger</h3>
+                <p>Toasted burger bun, extra-crunchy golden fried chicken breast.</p>
+                <span class="price"> R40-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="kiddies burger" data-price="40">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="kiddies burger" data-price="40">+</button>
+                </div>
+                </div>
+            </article>
+        </section>
+        <!-- End of kota section -->
+        <section id="sides">
+            <h2>Sides</h2>
+            <article>
+                <img src="./images/meat-lovers-feast.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>Meat Lover's</h3>
+                <p> 980g box of chips with your choice of spices and sauces</p>
+                <span class="price"> R30-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="Large slap chips" data-price="30">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="Large slap chips" data-price="30">+</button>
+                </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/fireCracker-onion-rings-and-chips.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>Onion Rings & Chips</h3>
+                <p>Thick-cut onion rings battered in spicy seasoned flour served with sweet chili dip.</p>
+                <span class="price"> R45-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="Chicken wings" data-price="45">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="Chicken wings" data-price="45">+</button>
+                </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/chillie-chicken-nudgets.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>Chillie Chicken Nuggets</h3>
+                <p>Pure beef patty, cheese, lettuce, tomato, caramelized onions</p>
+                <span class="price"> R65-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="Juicy Pork Ribs 300g" data-price="65">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="Juicy Pork Ribs 300g" data-price="65">+</button>
+                </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/drip-fries-small.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>Small Drip Chips</h3>
+                <p> Crispy golden french fries loaded with warm cheese sauce, bacon bits and spring onion.</p>
+                <span class="price"> R25-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="Green Leafy Salad" data-price="25">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="Green Leafy Salad" data-price="25">+</button>
+                </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/chicken-wings.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>Chicken Wings</h3>
+                <p>Large family portion of slap chips with spicy masala salt</p>
+                <span class="price"> R25-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="Green Leafy Salad" data-price="25">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="Green Leafy Salad" data-price="25">+</button>
+                </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/tikTok-slap-chips.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>Tiktok Slap Chips</h3>
+                <p>Thick-cut, soft traditional potatoes fried Kasi style.</p>
+                <span class="price"> R25-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="Green Leafy Salad" data-price="25">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="Green Leafy Salad" data-price="25">+</button>
+                </div>
+                </div>
+            </article>
+              <article>
+                <img src="./images/chakalaka-poppers.webp" alt="A delicious juicy kasi style kota">
+                <div class="cardText">
+                <h3>Chakalaka Poppers</h3>
+                <p>Deep-fried jalapeño pods stuffed with smooth cream cheese, sharp cheddar and spicy local chakalaka.</p>
+                <span class="price"> R25-00</span>
+                <div class="cardBtns">
+                    <button class="minus" data-name="Green Leafy Salad" data-price="25">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus" data-name="Green Leafy Salad" data-price="25">+</button>
+                </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <span id="total-price-view">Total: R0</span>
+        <button id="whatsapp-submit-btn">Send Order via WhatsApp</button>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
