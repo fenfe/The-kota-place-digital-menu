@@ -1,0 +1,27 @@
+
+{
+    "mickiesMenu": [
+        {
+            "id" : 1,
+            "name" : "Amapiano Mix",
+            "category" : "kota",
+            "price" : 50.00,
+            "ingredients": "kota white loaf, small chips, 2large eggs etc"
+        },
+
+          {
+            "id" : 1,
+            "name" : "Amapiano Mix",
+            "category" : "kota",
+            "price" : 50.00,
+            "ingredients": "kota white loaf, small chips, 2large eggs etc"
+        },
+          {
+            "id" : 1,
+            "name" : "Amapiano Mix",
+            "category" : "kota",
+            "price" : 50.00,
+            "ingredients": "kota white loaf, small chips, 2large eggs etc"
+        }
+    ]
+}

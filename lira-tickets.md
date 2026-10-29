@@ -1,5 +1,5 @@
 connecting mickies to a database
-jira ticket mick-101
+jira ticket mick-101 [Done]
 title : Initialize express application & project directory architecture
 status : TO DO
 priOrity : HIGH
@@ -42,6 +42,8 @@ Technical Acceptance criteria
 3. each item obj must have properties for id, name, description,price, and category
 4. create controller file controllers/menuController.js
 5. inside controller, write a functional js methodthat uses the Node file system module(fs) to read menu.json synchronously or async, parsing it into a clean js array
+
+>> 
 
 ///////////////////////////////////////////////////////////////////////////
 
@@ -151,8 +153,46 @@ Technical Acceptance criteria
 4. build a custom middleware file middleware/auth.js that checks if a user session is active.
 5. apply this authentication middleware layer to secure /admin, /admin/add-item,and /admin/delete-item/:id from unauhtorised access
 
+project structure plannning
+1. config
+ >>> What goes here:
+  Setup files for your application. This includes database connection files (e.g., MongoDB or MySQL setup), environment variable configurations, or third-party API keys.
+
+controllers/ (The Brains / Logic)
+>>>   What goes here:
+The actual function code that does things. This is where your menuController.js lives. It handles fetching data from the models, processing it (like using fs to read the JSON file), and sending the response back.
+>>>> controllers/ is the chef: This is where the cooking (logic) happens. The chef knows how to prepare the menu, but they need ingredients first.
+
+3. models/ (Data & Schema)
+>>> what goes here
+The blueprint of your data. If you are using a database, this defines what a "Menu Item" or an "Order" looks like (e.g., a Kota must have a name, price, and ingredients list). Note: If you aren't using a database yet, your menu.json file could temporarily live here or in the root directory.
+>>>> models/ is the pantry/fridge: This is where the ingredients (your data structure/MongoDB) live. The controller goes here to grab the data.
+
+4. public/ (Frontend Static Assets)
+>>> what goes here
+ Everything the client's browser needs to download directly. This includes your frontend HTML files, CSS stylesheets, browser JavaScript files, and images of your Kotas.
+
+ 5. routes/ (The Traffic Cop)
+ >>> what goes here
+ Files that define the URLs (endpoints) of your app. For example, it says: "If a user goes to /api/menu, direct them to the controller function that reads the menu."
+ >>>> routes/ is the waiter: They take the order (the URL request) from the customer and pass it to the kitchen. They don't cook the food; they just direct traffic.
+
+ 6. views/ (The Face of your App)
+ >>> what goes here
+ Your visual layout templates (like EJS, Pug, or plain HTML if you are serving pages from Node). If you are using a template engine like EJS, this is where you write HTML mixed with a tiny bit of JavaScript to dynamically list your Kotas.
+>>>> views/ is the plate presentation: This is how the food is arranged visually (HTML/CSS) before the waiter brings it back to the customer.
+
+ 7. server.js (The Engine / Entry Point)
+ >>> what goes here
+ The main starting file for your whole app. It initializes Express, connects to your MongoDB database (using config files), registers your routes, and tells the server to start listening on a specific port (like localhost:3000).
+>>>> server.js is the restaurant manager: They turn on the lights, open the doors, connect the gas (MongoDB link), and make sure all the staff members are talking to each other.
 
 
 
+How to approach this as you code:
 
+Instead of forcing yourself to memorize the path, focus on the "Chain of Imports". Whenever you create a new feature (like a /checkout page or an /add-kota button), just follow these three simple questions in your head:
+1. The Route: Where is the URL? (Write a file in routes/).
+2. The Controller: What happens when they hit that URL? (Write a function in controllers/).
+3. The Model: Do I need database data for this action? (Talk to your schema in models/).
 
